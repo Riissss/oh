@@ -1,28 +1,24 @@
 import telebot
 from telebot import types
-from ohmyriiss import CHANNEL, GROUP, OWNER, TOKEN
+
 from Messages import *
 from dataEgine import *
 
 
-access_token = TOKEN
+access_token = 'YOUR_TOKEN'
 bot = telebot.TeleBot(access_token)
+
 
 def inline_menu():
     """
     Create inline menu for new chat
     :return: InlineKeyboardMarkup
     """
-    callback = types.InlineKeyboardButton(
-        text="\U00002709 New chat", callback_data="NewChat"
-    )
-    ohmyriiss = types.InlineKeyboardButton(text="🔴 ᴏᴡɴᴇʀ", url=f"t.me/{OWNER}")
-    group = types.InlineKeyboardButton(text="👥 ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP}")
-    channel = types.InlineKeyboardButton(
-        text="ᴄʜᴀɴɴᴇʟ 📣", url=f"https://t.me/{CHANNEL}"
-    )
+    callback = types.InlineKeyboardButton(text='\U00002709 New chat', callback_data='NewChat')
     menu = types.InlineKeyboardMarkup()
-    menu.add(ohmyriiss, channel, group, callback)
+    menu.add(callback)
+
+    return menu
 
 
 def generate_markup():

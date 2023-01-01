@@ -1,42 +1,42 @@
-m_start = ' Hai!\Anda masuk ke obrolan random chat!\n' \
-               'Tekan tombol di bawah ini untuk mulai berkomunikasi dengan lawan bicara. ' \
-               'Jika Anda ingin mengenal seseorang lebih baik, tekan tombol Suka dan dengan simpati timbal balik ' \
-               'Anda akan dapat mengetahui Nama panggilan pasangan. Jika Anda tidak menyukai lawan bicara,' \
-               'maka jangan ragu untuk mengklik tombol tidak suka dan memulai obrolan baru.\n' \
-               'Perhatian! Agar bot berhasil bekerja, Anda harus memiliki username, ' \
-               'periksa pengaturan dan pastikan Anda memilikinya terdaftar!\n' \
-               'Untuk mematikan bot, panggil perintah / stop. ' \
-               'Harap dicatat bahwa semua data anda akan dihapus, jika tidak, Anda akan tetap berada di database.'
+m_start = 'Привет!\nТы попал в анонимный чат знакомств!\n' \
+               'Нажимай кнопку ниже, чтобы начать общение с собеседником. ' \
+               'Если захочешь узнать человека поближе - жми кнопку like и при взаимной симпатии ' \
+               'вы сможете узнать никнейм партнера. Если собеседник вам не по нраву, ' \
+               'то смело жми кнопку dislike и начинай новый чат.\n' \
+               'ВНИМАНИЕ! Для успешной работы бота у вас должен быть никнейм, ' \
+               'проверьте настройки и убедитесь, что у вас он указан!\n' \
+               'Чтобы завершить работу бота, вызовите команду /stop. ' \
+               'Учтите, что все ваши данные при этом будут удалены, в противном случае вы останетесь в базе.'
 
-M_is_not_free_users = ' maaf, tapi tidak ada pengguna gratis saat ini. ' \
-                   'Segera setelah pengguna lain masuk, kami akan menghubungkan Anda!'
-m_is_connect = 'Pasangan telah ditemukan!\nKatakan, Hai untuk membalas pasangan anda 😊\n/next - Untuk mencari obrolan baru\n /stop - Untuk berhenti dari obrolan\n🔊 PROMOTE 🔊\nYuk masuk group ini: 👉 @anony_cari_pacar'
+m_is_not_free_users = 'Извините, но в данный момент нет свободных пользователей. ' \
+                   'Как только зайдет еще один пользователь, мы вас соединим!'
+m_is_connect = 'Соединение установлено. Поприветствуйте собеседника!'
 
-m_play_again = ' apakah anda ingin berbicara dengan orang lain?'
+m_play_again = 'Хотите еще с кем-нибудь пообщаться?'
 
-m_is_not_user_name = 'maaf, tetapi di bot kami hanya mungkin untuk berkomunikasi jika Anda memiliki username😓'
+m_is_not_user_name = 'Извините, но в нашем боте возможно общаться только если вы имеет username'
 
-m_good_bye = ' Bot: selamat tinggal, kami akan senang melihat Anda lagi!'
+m_good_bye = 'Bot: До свидания, рады будем видеть Вас снова!'
 
-m_disconnect_user = 'Lawan bicara telah meninggalkan percakapan!\nApakah Anda Ingin mengobrol dengan orang lain?\nKetik /search untuk mencari obrolan baru'
+m_disconnect_user = 'Bot: Ваш собеседник отключился'
 
-M_failed = 'Bot: beberapa kesalahan telah terjadi!'
+m_failed = 'Bot: Произошла какая-то ошибка!'
 
-m_like = ' Bot: Pilihan bagus!'
+m_like = 'Bot: Отличный выбор!'
 
-m_dislike_user = 'Bot: Dialog telah berakhir'
+m_dislike_user = 'Bot: Диалог окончен'
 
-m_dislike_user_to = 'Bot: lawan bicara tidak menyukai Anda, kami mohon maaf'
+m_dislike_user_to = 'Bot: Вы не понравились собеседнику, сожалеем'
 
-m_send_some_messages = 'Bot: Anda tidak dapat meneruskan pesan Anda sendiri'
+m_send_some_messages = 'Bot: нельзя пересылать собственные сообщения'
 
-m_has_not_dialog = 'Anda bukan bagian dari dialog'
+m_has_not_dialog = 'Вы не состоите в диалоге'
 
-dislike_str = '\ U0001F44E Dislike'
+dislike_str = '\U0001F44E Dislike'
 
-like_str = '\ U0001f44d seperti'
+like_str = '\U0001F44D Like'
 
 
-def m_all_like (x):
-    kembalikan 'lawan bicara menyukai Anda \ n' + 'loginnya:' + str (x) + \
-           '\Good luck untuk Anda dalam komunikasi Anda!Terima kasih telah bersama kami!'
+def m_all_like(x):
+    return 'Вы понравились собеседнику\n' + 'Его логин: ' + str(x) + \
+           '\nУдачи вам в вашем общении!\nСпасибо что вы с нами!'
