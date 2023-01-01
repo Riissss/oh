@@ -1,6 +1,6 @@
 import os
 
-TOKEN = os.environ.get("TOKEN", "") # Dapatkan di @botfather
-OWNER = os.environ.get("OWNER", "kang_culiknew") # jangan dirubah agar tidak error
-GROUP = os.environ.get("GROUP", "") # 
-CHANNEL = os.environ.get("CHANNEL", "vvslh_pro") # 
+TOKEN = os.environ.get("TOKEN", "5809941857:AAEyrnyV59fxkf3w4m94Js7mrRH6LaBOv-s") # Dapatkan di @botfather
+OWNER = os.environ.get("OWNER", "ohmyriiss") # jangan dirubah agar tidak error
+GROUP = os.environ.get("GROUP", "anony_caripacar") # 
+INSTAGRAM = os.environ.get("INSTAGRAM", "ohmyriiss") # 

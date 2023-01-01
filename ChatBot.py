@@ -1,5 +1,5 @@
 import telebot
-from ohmyriiss import CHANNEL, GROUP, OWNER, TOKEN
+from ohmyriiss import INSTAGRAM, GROUP, OWNER, TOKEN
 from telebot import types
 
 from Messages import *
@@ -20,11 +20,11 @@ def inline_menu():
     )
     Aris1987 = types.InlineKeyboardButton(text="🔵 ᴏᴡɴᴇʀ", url=f"t.me/{OWNER}")
     group = types.InlineKeyboardButton(text="👥 ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP}")
-    channel = types.InlineKeyboardButton(
-        text="ᴄʜᴀɴɴᴇʟ 📣", url=f"https://t.me/{CHANNEL}"
+    instagram = types.InlineKeyboardButton(
+        text="instagram", url=f"https://instagram.com/{instagram}"
     )
     menu = types.InlineKeyboardMarkup()
-    menu.add(Aris1987, channel, group, callback)
+    menu.add(Aris1987,instagram, group, callback)
 
     return menu
 
