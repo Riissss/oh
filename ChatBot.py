@@ -21,7 +21,7 @@ def inline_menu():
     Aris1987 = types.InlineKeyboardButton(text="🔵 ᴏᴡɴᴇʀ", url=f"t.me/{OWNER}")
     group = types.InlineKeyboardButton(text="👥 ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP}")
     instagram = types.InlineKeyboardButton(
-        text="instagram", url=f"https://instagram.com/{instagram}"
+        text="instagram", url=f"https://instagram.com/{INSTAGRAM}"
     )
     menu = types.InlineKeyboardMarkup()
     menu.add(Aris1987,instagram, group, callback)

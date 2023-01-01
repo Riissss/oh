@@ -1,27 +1,27 @@
-m_start = ' **Hai selamat datang di bot kami🤝**   \n    __Bot ini dibuat untuk berkomunikasi chat secara acak__   \n    **Perhatian!**   \n    __1.Agar bot berhasil bekerja, Anda harus memiliki username__   \n    __2.Untuk mematikan bot, panggil perintah /stop.__   \n    __3.Harap dicatat bahwa semua data anda akan dihapus, jika tidak, Anda akan tetap berada di database.__ '
+m_start = ' Hai selamat datang di ✉️BOT✉️ kami🤝   \n    ✉️BOT✉️ ini dibuat untuk berkomunikasi chat secara acak   \n    Perhatian!   \n    1.Agar ✉️BOT✉️ berhasil bekerja, Anda harus memiliki username   \n    2.Untuk mematikan ✉️BOT✉️, panggil perintah /stop.   \n    3.Harap dicatat bahwa semua data anda akan dihapus, jika tidak, Anda akan tetap berada di database. '
 
-m_is_not_free_users = ' **🔴WARNING🔴**  \n   __Maaf, sistem kami tidak menemukan pengguna lain,  \n    __Kami akan segera menghubungi anda jika ada pengguna lain masuk :)__ '
-m_is_connect = ' __Pasangan telah ditemukan, silakan mengobrol dengan sopan!__ '
+m_is_not_free_users = ' 🔴WARNING🔴  \n   Maaf, sistem kami tidak menemukan pengguna lain,  \n    Kami akan segera menghubungi anda jika ada pengguna lain masuk :) '
+m_is_connect = ' Pasangan telah ditemukan, silakan mengobrol dengan sopan! '
 
 m_play_again = '_Apakah anda ingin berbicara dengan orang lain?_'
 
-m_is_not_user_name = ' __Maaf,Bot ini tidak akan berfungsi jika pengguna tidak ada username, silakan cek dan atur username dan kembali klick /start kembali__ '
+m_is_not_user_name = ' Maaf, BOT ini tidak akan berfungsi jika pengguna tidak ada username, silakan cek dan atur username dan kembali klick /start kembali '
 
-m_good_bye = ' **BOT**  \n   __Selamat tinggal, kami akan senang melihat Anda lagi!__ '
+m_good_bye = ' ✉️BOT✉️  \n   Selamat tinggal, kami akan senang melihat Anda lagi! '
 
-m_disconnect_user = ' **BOT**  \n   __Yach pasangan bicara Anda terputus :(__ '
+m_disconnect_user = ' ✉️BOT✉️  \n   Yach pasangan bicara Anda terputus :( '
 
-M_failed = ' **BOT**  \n   __Beberapa kesalahan telah terjadi!__ '
+M_failed = ' ✉️BOT✉️  \n   Beberapa kesalahan telah terjadi! '
 
-m_like = ' **BOT**  \n   _Pilihan bagus!_'
+m_like = ' ✉️BOT✉️  \n   _Pilihan bagus!_'
 
-m_dislike_user = ' **BOT**  \n   __Percakapan telah berakhir__ '
+m_dislike_user = ' ✉️BOT✉️  \n   Percakapan telah berakhir '
 
-m_dislike_user_to = ' **BOT**  \n   __Pasangan bicara tidak menyukai Anda, kami mohon maaf__ '
+m_dislike_user_to = ' ✉️BOT✉️  \n   Pasangan bicara tidak menyukai Anda, kami mohon maaf '
 
-m_send_some_messages = ' **BOT**  \n   __Anda tidak dapat meneruskan pesan Anda sendiri__ '
+m_send_some_messages = ' ✉️BOT✉️  \n   Anda tidak dapat meneruskan pesan Anda sendiri '
 
-m_has_not_dialog = ' **BOT**** __Anda sedang tidak ada di obrolan, silahkan klick /start dan mulai mengobrol__ '
+m_has_not_dialog = ' ✉️BOT✉️ \n  Anda sedang tidak ada di obrolan, silahkan klick /start dan mulai mengobrol '
 
 dislike_str = '\ U0001F44E Dislike'
 
