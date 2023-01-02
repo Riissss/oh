@@ -50,7 +50,28 @@ def connect_user(user_id):
     else:
         bot.send_message(user_id, m_has_not_dialog)
         return False
-
+@bot.message_handler(commands=['find'])
+def find(message: types.Message):
+    user_id = message.from_user.id
+    if message.chat.type == 'private':
+        if user_id in ruangan["menunggu"]:
+            return bot.send_message(user_id, '<i>Kamu sedang berada diantrian pencarian</i>', 'HTML')
+        if not user_id in ruangan["room"]:
+            ruangan["menunggu"].append(user_id)
+            if len(ruangan["menunggu"]) > 1 and not user_id in ruangan["room"]:
+                teman = random.choice(exList(ruangan["menunggu"], user_id))
+                if teman != user_id:
+                    print('[SB] ' + str(user_id) + ' terhubung dengan ' + str(teman))
+                    ruangan["menunggu"].remove(teman)
+                    ruangan["room"][user_id] = teman
+                    ruangan["room"][teman] = user_id
+                    bot.send_message(user_id, "<i>Pasangan telah ditemukan✨</i>\n/stop - stop obrolan", "HTML")
+                    return bot.send_message(teman, "<i>Pasangan ditemukan✨</i>\n/stop - stop obrolan", "HTML")
+            else:
+                print('[SB] ' + str(user_id) + ' menunggu diruangan')
+                return bot.send_message(user_id, "<i>Sedang mencari pasangan untuk anda 🔍</i>", "HTML")
+        else:
+            return bot.send_message(user_id, "<i>Kamu sudah ada diobrolan sayang</i>",'HTML')
 
 @bot.message_handler(commands=['start'])
 def echo(message):
